@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "181807685310",
+    "project_id": "joint-rehab",
+    "storage_bucket": "joint-rehab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:181807685310:android:7f018d89dbbd743f3388ef",
+        "android_client_info": {
+          "package_name": "com.example.jointrehab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "181807685310-qo46pvj6ausfr9fbhrr1h75d6k0bj89l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT0o_6Y5OnZuk1to1E-dwX1vrgA3BIKtM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "181807685310-qo46pvj6ausfr9fbhrr1h75d6k0bj89l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

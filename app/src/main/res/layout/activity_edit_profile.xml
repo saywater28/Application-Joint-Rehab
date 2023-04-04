@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".editProfile"
+    android:layout_marginTop="35dp"
+    android:layout_marginStart="20dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/left"
+            android:layout_marginRight="90dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/poppins_medium"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="60dp">
+
+    <ImageView
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/photo_upload"
+        android:layout_marginLeft="30dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Photo Upload +"
+        android:textSize="27sp"
+        android:textColor="@color/color_blue"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/poppins_medium"/>
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/color_grey_text"
+            android:textSize="21sp"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Noah Evans"
+            android:textColor="@color/black"
+            android:text="Noah Evans"
+            android:layout_marginLeft="32dp"
+            android:textSize="21sp"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email ID"
+            android:textColor="@color/color_grey_text"
+            android:textSize="21sp"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="noahevans@user.com"
+            android:textColor="@color/black"
+            android:text="noahevans@user.com"
+            android:textSize="21sp"
+            android:layout_marginLeft="13dp"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone"
+            android:textColor="@color/color_grey_text"
+            android:textSize="21sp"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="+1 584 548 5254"
+            android:textColor="@color/black"
+            android:text="+1 584 548 5254"
+            android:textSize="21sp"
+            android:layout_marginLeft="30dp"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Address"
+            android:textColor="@color/color_grey_text"
+            android:textSize="21sp"
+            android:padding="5dp"
+            android:fontFamily="@font/poppins_medium"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Abc Street "
+            android:textColor="@color/black"
+            android:text="Abc Street "
+            android:textSize="21sp"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/poppins_medium"
+            android:padding="10dp"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
