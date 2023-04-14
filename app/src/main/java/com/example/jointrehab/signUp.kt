@@ -22,14 +22,12 @@ class signUp : AppCompatActivity() {
     private lateinit var editEmail: EditText
     private lateinit var editPassword: EditText
     private lateinit var signUpBtn: AppCompatButton
-
     private lateinit var firebaseAuth: FirebaseAuth
 
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
         firebaseAuth = FirebaseAuth.getInstance()
-
 
         editName = findViewById(R.id.editName)
         editEmail = findViewById(R.id.editEmail)

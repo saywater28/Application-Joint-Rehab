@@ -12,30 +12,19 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="410dp"
-        android:layout_height="0dp"
-        android:src="@drawable/welcome"
+        android:layout_width="420dp"
+        android:layout_height="410dp"
+        android:src="@drawable/background"
         app:layout_constraintDimensionRatio="h,1:1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hey There!!"
-        android:textColor="@color/color_olive"
-        android:textSize="23sp"
-        android:fontFamily="@font/poppins_semibold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
         android:fontFamily="@font/poppins_semibold"
         android:text="Joint Rehab"
         android:textColor="@color/color_yellow"
@@ -43,52 +32,70 @@
         app:layout_constraintBottom_toTopOf="@id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="10dp"
         android:fontFamily="@font/poppins_light"
         android:gravity="center"
         android:text="Aim is to identify and track a person’s muscle movement\n in order to provide him better progress report."
         android:textColor="@color/color_olive"
-        android:textSize="10sp"
+        android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView2" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/getStartedBtn"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
-        android:backgroundTint="@color/color_button_yellow"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_bg"
         android:fontFamily="@font/poppins_semibold"
         android:text="Get Started"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="23sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView3" />
 
-    <TextView
-        android:id="@+id/textView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/poppins_light"
-        android:text="I already have an account"
-        android:textColor="@color/black"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/getStartedButton"
-        app:layout_constraintVertical_bias="0.228" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:fontFamily="@font/poppins_light"-->
+<!--        android:text="I already have an account"-->
+<!--        android:textColor="@color/black"-->
+<!--        android:textSize="12sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.282"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/getStartedBtn"-->
+<!--        app:layout_constraintVertical_bias="0.187" />-->
+
+<!--    <androidx.appcompat.widget.AppCompatButton-->
+<!--        android:id="@+id/loginBtn"-->
+<!--        android:layout_width="90dp"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:background="@drawable/login_button_bg"-->
+<!--        android:fontFamily="@font/poppins_semibold"-->
+<!--        android:text="Login"-->
+<!--        android:textColor="@color/color_olive"-->
+<!--        android:textSize="15sp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.233"-->
+<!--        app:layout_constraintStart_toEndOf="@+id/textView4"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/getStartedBtn"-->
+<!--        app:layout_constraintVertical_bias="0.272" />-->
 
 </androidx.constraintlayout.widget.ConstraintLayout>

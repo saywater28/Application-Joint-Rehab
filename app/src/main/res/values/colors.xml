@@ -7,14 +7,19 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
-    <color name="color_olive">#57570D</color>
-    <color name="color_yellow">#dca80d</color>
-    <color name="color_button_yellow">#F0D164</color>
+    <color name="color_olive">#506369</color>
+    <color name="color_yellow">#d4ce46</color>
+    <color name="color_start_button">#e8463b</color>
+    <color name="color_start_button2">#f5655a</color>
     <color name="color_grey">#d8d8d8</color>
     <color name="color_grey_profile">#d9d9d9</color>
     <color name="color_red">#ffafb1</color>
     <color name="color_blue">#2196f3</color>
     <color name="color_grey_text">#707070</color>
+    <color name="red">#ff0000</color>
+    <color name="yellow">#ffff00</color>
+    <color name="blue">#0000ff</color>
+
 
 
 </resources>

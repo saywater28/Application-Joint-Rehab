@@ -3,9 +3,12 @@ package com.example.jointrehab
 import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.graphics.Color
 import android.util.Log
+import android.view.View
 import android.widget.TextView
 import com.example.jointrehab.models.JointResponse
+import com.example.jointrehab.models.Test
 import com.example.jointrehab.models.Value
 import com.google.firebase.database.*
 import com.google.firebase.database.ktx.database
@@ -13,6 +16,16 @@ import com.google.firebase.database.ktx.getValue
 import com.google.firebase.ktx.Firebase
 
 class data : AppCompatActivity() {
+
+    private lateinit var dot1 : TextView
+    private lateinit var dot2 : TextView
+    private lateinit var dot3 : TextView
+    private lateinit var dot4 : TextView
+    private lateinit var dot5 : TextView
+    private lateinit var dot6 : TextView
+    private lateinit var db : DatabaseReference
+
+
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -20,6 +33,13 @@ class data : AppCompatActivity() {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_data)
+
+        var dot1 = findViewById<TextView>(R.id.sensor01)
+        var dot2 = findViewById<TextView>(R.id.sensor2)
+        dot3 = findViewById(R.id.sensor3)
+        dot4 = findViewById(R.id.sensor4)
+        dot5 = findViewById(R.id.sensor5)
+        dot6 = findViewById(R.id.sensor6)
 
         var sensor1 = findViewById<TextView>(R.id.tvSensor1)
 
@@ -29,10 +49,28 @@ class data : AppCompatActivity() {
             object : ValueEventListener {
                 override fun onDataChange(snapshot: DataSnapshot) {
                     val values = snapshot.getValue<List<Value>>()
-//                    for (dataSnapshot in snapshot.children){
+                    sensor1.text = values?.get(0)?.readings?.seansor1.toString()
 
+//                    val sensor01 = snapshot.getValue(String::class.java)
+                    dot1.text = values?.get(0)?.readings?.seansor1.toString()
+
+
+                    if (Integer.parseInt(values?.get(0)?.anglex!!) >= 202){
+                            dot1.setBackgroundColor(Color.RED)
+                        }
+                        else if (Integer.parseInt(values.get(0).anglex) < 202 && Integer.parseInt(
+                            values.get(0).anglex
+                        ) > 88)
+                        {
+                            dot1.setBackgroundColor(Color.YELLOW)
+                        }
+                        else {
+                            dot1.setBackgroundColor(Color.BLUE)
+                        }
+
+
+//                    for (dataSnapshot in snapshot.children){
 //                        id.text = value.anglex
-                        sensor1.text = values?.get(0)?.readings?.seansor1.toString()
 
 //                        Log.e("@@@", values?.get(0)?.readings?.seansor1.toString())
 //                    }
@@ -44,64 +82,6 @@ class data : AppCompatActivity() {
 
             }
         )
-
-        // Write a message to the database
-//        val base = Firebase.databa
-//        val myRef = base.getReference("message")
-
-//        val database = FirebaseDatabase.getInstance().reference.child("test").child("")
-
-//        val database = FirebaseDatabase.getInstance().reference.child("test").child("json").child("value")
-//        database = Firebase.database.reference
-//        val database = FirebaseDatabase.getInstance().reference.child("test").child("json").child("value")
-
-//        val postListener = object : ValueEventListener {
-//            override fun onDataChange(dataSnapshot: DataSnapshot) {
-//                // Get Post object and use the values to update the UI
-//                val post = dataSnapshot.getValue<JointResponse>()
-//                Log.e("@@",post.toString())
-//            }
-
-//            override fun onCancelled(databaseError: DatabaseError) {
-//                // Getting Post failed, log a message
-//                Log.w("@@@", "loadPost:onCancelled", databaseError.toException())
-//            }
-//        }
-//        database.addValueEventListener(postListener)
-
-
-//        database.addValueEventListener(object : ValueEventListener {
-//
-//            override fun onDataChange(snapshot: DataSnapshot) {
-//                if(snapshot?.hasChild("test")!!){
-//                    val testData = snapshot.child("test")?.value as JointResponse
-//                    Log.e("@@",testData.toString())
-//                }
-//            }
-//
-//            override fun onCancelled(error: DatabaseError) {
-//
-//            }
-//
-//        })
-//        val array = database.child("test").child("json").child("value").child("0").get()
-
-//        myRef.addValueEventListener(object : ValueEventListener {
-//            override fun onDataChange(dataSnapshot: DataSnapshot) {
-//                // This method is called once with the initial value and again
-//                // whenever data at this location is updated.
-//                val value = dataSnapshot.getValue<String>()
-//                Log.d("@@@", "Value is: $value")
-//            }
-//
-//            override fun onCancelled(error: DatabaseError) {
-//
-//            }
-
-//        })
-
-
-//        Log.e("@@@",array.toString())
 
     }
 }
