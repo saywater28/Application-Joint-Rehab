@@ -9,11 +9,6 @@
     android:layout_gravity="center_horizontal"
     tools:context=".signUp">
 
-    <ImageView
-        android:layout_width="50dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="10dp"
-        android:src="@drawable/cross_small__1_"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -23,17 +18,16 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:fontFamily="@font/poppins_light"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="10dp"
         android:layout_marginBottom="20dp"
         android:layout_gravity="center"/>
-
-
 
         <EditText
             android:id="@+id/editName"
             android:layout_width="360dp"
             android:layout_height="wrap_content"
             android:hint="Name"
+            android:inputType="textEmailAddress"
             android:textSize="15sp"
             android:padding="8dp"
             android:layout_gravity="center_horizontal"

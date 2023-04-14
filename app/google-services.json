@@ -1,33 +1,34 @@
 {
   "project_info": {
-    "project_number": "181807685310",
-    "project_id": "joint-rehab",
-    "storage_bucket": "joint-rehab.appspot.com"
+    "project_number": "390455661551",
+    "firebase_url": "https://joint2121-e538e-default-rtdb.firebaseio.com",
+    "project_id": "joint2121-e538e",
+    "storage_bucket": "joint2121-e538e.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:181807685310:android:7f018d89dbbd743f3388ef",
+        "mobilesdk_app_id": "1:390455661551:android:894714bb85424a50bfdc1a",
         "android_client_info": {
           "package_name": "com.example.jointrehab"
         }
       },
       "oauth_client": [
         {
-          "client_id": "181807685310-qo46pvj6ausfr9fbhrr1h75d6k0bj89l.apps.googleusercontent.com",
+          "client_id": "390455661551-op7q1p20gt2rie718ghbovduedo95erf.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCT0o_6Y5OnZuk1to1E-dwX1vrgA3BIKtM"
+          "current_key": "AIzaSyAv4jJ1dUk9Sdot952MkuCa5r6Dzlzxh8g"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "181807685310-qo46pvj6ausfr9fbhrr1h75d6k0bj89l.apps.googleusercontent.com",
+              "client_id": "390455661551-n6gc14gm6gl9o1t4gspgkggnssv3g9l0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
