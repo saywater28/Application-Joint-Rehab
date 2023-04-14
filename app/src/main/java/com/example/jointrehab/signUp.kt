@@ -22,24 +22,33 @@ class signUp : AppCompatActivity() {
     private lateinit var editEmail: EditText
     private lateinit var editPassword: EditText
     private lateinit var signUpBtn: AppCompatButton
+    private lateinit var loginBtn : AppCompatButton
     private lateinit var firebaseAuth: FirebaseAuth
 
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_up)
+        supportActionBar?.hide()
         firebaseAuth = FirebaseAuth.getInstance()
+
 
         editName = findViewById(R.id.editName)
         editEmail = findViewById(R.id.editEmail)
         editPassword = findViewById(R.id.editPassword)
         signUpBtn = findViewById(R.id.signUpBtn)
 
+        loginBtn = findViewById(R.id.loginBtn)
+        loginBtn.setOnClickListener{
+            val intent = Intent(this@signUp, SignIn::class.java)
+            startActivity(intent)
+        }
+
 
         signUpBtn.setOnClickListener {
             val editName = editName.text.toString()
             val editEmail = editEmail.text.toString()
             val editPassword = editPassword.text.toString()
-//            val db = F.
 
             firebaseAuth.createUserWithEmailAndPassword(editEmail, editPassword).addOnCompleteListener {
                 if (it.isSuccessful){

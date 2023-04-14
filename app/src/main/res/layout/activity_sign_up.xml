@@ -18,13 +18,13 @@
         android:textStyle="bold"
         android:textColor="@color/black"
         android:fontFamily="@font/poppins_light"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:layout_marginBottom="20dp"
         android:layout_gravity="center"/>
 
         <EditText
             android:id="@+id/editName"
-            android:layout_width="360dp"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:hint="Name"
             android:inputType="textEmailAddress"
@@ -38,7 +38,7 @@
 
     <EditText
         android:id="@+id/editEmail"
-        android:layout_width="360dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:hint="Email"
         android:textSize="15sp"
@@ -51,7 +51,7 @@
 
     <EditText
         android:id="@+id/editPassword"
-        android:layout_width="360dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:hint="Password"
         android:textSize="15sp"
@@ -64,7 +64,7 @@
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/signUpBtn"
-        android:layout_width="360dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:background="@drawable/button_bg"
         android:text="Sign Up"
@@ -76,26 +76,52 @@
         android:fontFamily="@font/poppins_medium"
         android:layout_gravity="center_horizontal"/>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Already have an account?"
-        android:textSize="12sp"
-        android:fontFamily="@font/poppins_light"
-        android:layout_gravity="center_horizontal"
-        android:textColor="@color/black"/>
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_gravity="center"
+        android:layout_marginRight="40sp"
+        android:layout_marginLeft="40sp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Already have an account?"
+            android:textSize="12sp"
+            android:layout_marginLeft="20dp"
+            android:fontFamily="@font/poppins_light"
+            android:textColor="@color/black"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginBtn"
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:background="@drawable/login_button_bg"
+            android:fontFamily="@font/poppins_semibold"
+            android:text="Login"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+
+
+    </LinearLayout>
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="_______________________________________________________"
+        android:text="_________________________________________"
         android:textSize="12sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
         android:fontFamily="@font/poppins_light"
         android:layout_gravity="center_horizontal"
         android:textColor="@color/black"/>
 
     <androidx.cardview.widget.CardView
-        android:layout_width="360dp"
+        android:layout_width="320dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="30dp"
         android:layout_gravity="center_horizontal"
@@ -119,76 +145,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Continue With Google"
-                android:textColor="@color/white"
-                android:background="#171817"
-                android:textSize="18sp"
-                android:fontFamily="@font/poppins_semibold"/>
-
-        </LinearLayout>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:layout_gravity="center_horizontal"
-        app:cardCornerRadius="10dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="8dp"
-            android:background="#171817"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/facebook_color"
-                android:layout_marginRight="40dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Continue With Facebook"
-                android:textColor="@color/white"
-                android:background="#171817"
-                android:textSize="18sp"
-                android:fontFamily="@font/poppins_semibold"/>
-
-        </LinearLayout>
-
-
-    </androidx.cardview.widget.CardView>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="360dp"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="12dp"
-        app:cardCornerRadius="10dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:padding="8dp"
-            android:background="#171817"
-            android:orientation="horizontal">
-
-            <ImageView
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:src="@drawable/apple_grey"
-                android:layout_marginRight="40dp"/>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Continue With Apple"
                 android:textColor="@color/white"
                 android:background="#171817"
                 android:textSize="18sp"
